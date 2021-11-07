@@ -14,6 +14,9 @@
 		6172F2D35A4C3AA820D92908 /* libPods-portfolio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-portfolio.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-portfolio-portfolioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-portfolio-portfolioTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		52D2153A878041CCBC0F0EC7 /* SVN-Gilroy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2988A7F1E4B4F97B253FA /* SVN-Gilroy.otf */; };
+		CC4B4A0AC1514EC396F741D2 /* SVN-GilroyBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A00D2E84949A4194ACAEB5C2 /* SVN-GilroyBold.otf */; };
+		93BC65DF327A4BF0BD018695 /* SVN-GilroySemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DE165E2F2654AE3B89E2B6D /* SVN-GilroySemiBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +40,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = portfolio/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = portfolio/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-portfolio-portfolioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolio-portfolioTests.release.xcconfig"; path = "Target Support Files/Pods-portfolio-portfolioTests/Pods-portfolio-portfolioTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C8B03F17F084D058229BAF1 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-portfolio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-portfolio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-portfolio-portfolioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolio-portfolioTests.debug.xcconfig"; path = "Target Support Files/Pods-portfolio-portfolioTests/Pods-portfolio-portfolioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = portfolio/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-portfolio-portfolioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-portfolio-portfolioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B102C0AFF79642EEBF3BE7E9 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Display-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		C0A881CF5CF3F2B244570E2A /* Pods-portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolio.debug.xcconfig"; path = "Target Support Files/Pods-portfolio/Pods-portfolio.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolio.release.xcconfig"; path = "Target Support Files/Pods-portfolio/Pods-portfolio.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6FF2988A7F1E4B4F97B253FA /* SVN-Gilroy.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy.otf"; path = "../src/assets/fonts/SVN-Gilroy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A00D2E84949A4194ACAEB5C2 /* SVN-GilroyBold.otf */ = {isa = PBXFileReference; name = "SVN-GilroyBold.otf"; path = "../src/assets/fonts/SVN-GilroyBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0DE165E2F2654AE3B89E2B6D /* SVN-GilroySemiBold.otf */ = {isa = PBXFileReference; name = "SVN-GilroySemiBold.otf"; path = "../src/assets/fonts/SVN-GilroySemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				CA008A388A7845C58A9652E9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,6 +146,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CA008A388A7845C58A9652E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C8B03F17F084D058229BAF1 /* SF-Pro-Display-Bold.otf */,
+				B102C0AFF79642EEBF3BE7E9 /* SF-Pro-Display-Regular.otf */,
+				6FF2988A7F1E4B4F97B253FA /* SVN-Gilroy.otf */,
+				A00D2E84949A4194ACAEB5C2 /* SVN-GilroyBold.otf */,
+				0DE165E2F2654AE3B89E2B6D /* SVN-GilroySemiBold.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +166,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-portfolio-portfolioTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-portfolio-portfolioTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +265,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				52D2153A878041CCBC0F0EC7 /* SVN-Gilroy.otf in Resources */,
+				CC4B4A0AC1514EC396F741D2 /* SVN-GilroyBold.otf in Resources */,
+				93BC65DF327A4BF0BD018695 /* SVN-GilroySemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

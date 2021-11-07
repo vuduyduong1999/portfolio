@@ -15,12 +15,12 @@ export const responsive = (size: number, exactly?: boolean) => {
     return Math.round(PixelRatio.roundToNearestPixel(newSize)) - 1;
   }
 };
-export const width = Dimensions.get('screen').width;
-export const height = Dimensions.get('screen').height;
+export const WIDTH = Dimensions.get('screen').width;
+export const HEIGHT = Dimensions.get('screen').height;
 
 export const responsiveByHeight = (size: number) => {
   // based on iPhone X's scale
-  const SCALE_FACTOR = height / 812;
+  const SCALE_FACTOR = HEIGHT / 812;
 
   const newSize = size * SCALE_FACTOR;
   if (Platform.OS === 'ios') {
