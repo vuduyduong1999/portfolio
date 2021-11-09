@@ -1,6 +1,7 @@
 package com.portfolio;
 
 
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.bridge.JSIModulePackage;
 import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 

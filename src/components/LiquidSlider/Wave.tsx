@@ -11,10 +11,10 @@ import { Vector } from 'react-native-redash';
 import Svg, { Path, PathProps } from 'react-native-svg';
 
 import { HEIGHT } from '@styles';
+import { ESide } from '@types';
 import { curve } from '@utils';
 
-import { c, MIN_LEDGE } from './constant';
-import { ESide } from './type';
+import { C, MIN_LEDGE } from './constant';
 
 interface Props {
   side: ESide;
@@ -23,12 +23,12 @@ interface Props {
   isTransitioning: Animated.SharedValue<boolean>;
 }
 
-const ASvg = Animated.createAnimatedComponent(Svg);
 const APath = Animated.createAnimatedComponent(Path);
 export const Wave = ({ children, side, position: { x, y } }: Props) => {
   const R = useDerivedValue(() => {
     return x.value + MIN_LEDGE;
   });
+  const CurveCubize = useDerivedValue(() => R.value * C);
   const animatedProps = useAnimatedProps((): PathProps => {
     const p1: Vector = {
       x: x.value,
@@ -36,7 +36,7 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
     };
     const c1: Vector = {
       x: p1.x,
-      y: p1.y + R.value * c,
+      y: p1.y + CurveCubize.value,
     };
     const p2: Vector = {
       x: x.value + R.value / 2,
@@ -49,11 +49,11 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
     };
     const c31: Vector = {
       x: p3.x,
-      y: p3.y - R.value * c,
+      y: p3.y - CurveCubize.value,
     };
     const c32: Vector = {
       x: p3.x,
-      y: p3.y + R.value * c,
+      y: p3.y + CurveCubize.value,
     };
     const p4: Vector = {
       x: x.value + R.value / 2,
@@ -66,7 +66,7 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
     };
     const c5: Vector = {
       x: p5.x,
-      y: p5.y - R.value * c,
+      y: p5.y - CurveCubize.value,
     };
     const d: string[] = [
       'M 0 0',
@@ -84,7 +84,7 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
     return { d: d.join('') };
   });
   const maskElement = (
-    <ASvg
+    <Svg
       style={[
         StyleSheet.absoluteFill,
         {
@@ -97,7 +97,7 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
       ]}
     >
       <APath animatedProps={animatedProps} fill={'black'} />
-    </ASvg>
+    </Svg>
   );
 
   return (

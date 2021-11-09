@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction, useEffect } from 'react';
 
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { PanGestureHandler } from 'react-native-gesture-handler';
 import Animated, {
@@ -13,11 +13,10 @@ import Animated, {
 import { snapPoint, useVector } from 'react-native-redash';
 
 import { HEIGHT, WIDTH } from '@styles';
+import { ESide } from '@types';
 
-import { Slide } from './Slide';
 import { Wave } from './Wave';
 import { MARGIN_WIDTH, MIN_LEDGE } from './constant';
-import { ISlide, ESide } from './type';
 
 interface Props {
   children: React.ReactNode;

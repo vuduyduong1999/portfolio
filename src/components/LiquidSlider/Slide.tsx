@@ -6,8 +6,7 @@ import Color from 'color';
 import Svg, { Defs, RadialGradient, Rect, Stop } from 'react-native-svg';
 
 import { HEIGHT, responsive, typos, WIDTH } from '@styles';
-
-import { ISlide } from './type';
+import { ISlide } from '@types';
 
 interface Props {
   slide: ISlide;

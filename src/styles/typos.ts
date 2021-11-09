@@ -20,12 +20,16 @@ const regular: TextStyle = {
 };
 
 export const typos = {
-  xl4: { ...bold, fontSize: responsive(48), lineHeight: responsive(51) },
-  xl3: { ...bold, fontSize: responsive(36), lineHeight: responsive(39) },
+  xl4: {
+    bold: { ...bold, fontSize: responsive(48), lineHeight: responsive(51) },
+  },
+  xl3: {
+    bold: { ...bold, fontSize: responsive(36), lineHeight: responsive(39) },
+  },
   xl2: {
     bold: { ...bold, fontSize: responsive(30), lineHeight: responsive(33) },
   },
-  xxl: {
+  xl: {
     regular: {
       ...regular,
       fontSize: responsive(26),
@@ -38,7 +42,7 @@ export const typos = {
     },
     bold: { ...bold, fontSize: responsive(26), lineHeight: responsive(29) },
   },
-  xl: {
+  lg: {
     regular: {
       ...regular,
       fontSize: responsive(20),
@@ -51,7 +55,7 @@ export const typos = {
     },
     bold: { ...bold, fontSize: responsive(20), lineHeight: responsive(23) },
   },
-  lg: {
+  md: {
     regular: {
       ...regular,
       fontSize: responsive(16),

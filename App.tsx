@@ -2,14 +2,18 @@ import React from 'react';
 
 import { StatusBar, View } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+
 import { LiquidSlider } from '@components';
+
+import { RootApp } from '@navigation';
 
 const App = () => {
   return (
-    <View style={{ flex: 1, backgroundColor: 'white' }}>
+    <NavigationContainer>
       <StatusBar translucent backgroundColor={'transparent'} />
-      <LiquidSlider />
-    </View>
+      <RootApp />
+    </NavigationContainer>
   );
 };
 
