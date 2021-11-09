@@ -1,1 +1,2 @@
-export * from './LiquidSlider';
+export * from './slide';
+export * from './category';

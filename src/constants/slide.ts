@@ -2,7 +2,7 @@ import { colors } from '@styles';
 import { ISlide } from '@types';
 
 import {
-  DuongVu,
+  Avatar,
   Experience,
   Satavan,
   Study,
@@ -16,7 +16,7 @@ export const slides: ISlide[] = [
     title: 'Duy Duong',
     description:
       'Make by Duong vu\n Liên hệ: duongvu0953@gmail.com\n 21 - 11 - 1999',
-    picture: DuongVu,
+    picture: Avatar,
   },
   {
     color: colors.SECONDARY,

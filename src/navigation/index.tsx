@@ -9,7 +9,7 @@ import { renderRoot } from './renderRoot';
 
 const RootApp = () => {
   const initialRouteName: keyof RootStackParamList =
-    Platform.OS === 'ios' ? 'IntroduceIOS' : 'IntroduceAndroid';
+    Platform.OS === 'ios' ? 'IntroduceIOS' : 'DashBoard';
   useEffect(() => {
     SplashScreen.hide();
   }, []);
