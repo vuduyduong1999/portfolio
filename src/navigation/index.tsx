@@ -20,23 +20,18 @@ const RootApp = () => {
   }, []);
   return (
     <RootStack.Navigator
-      screenOptions={({ navigation, route }) => {
+      screenOptions={({ route }) => {
         return {
           headerShown: route.name === 'AboutMe' || route.name === 'MyProject',
           headerStyle: styles.headerStyle,
-          headerTransparent: route.name === 'AboutMe',
+          headerTransparent: true,
           title: '',
           headerLeft: ({ onPress }) => {
-            const backgroundColor =
-              route.name === 'AboutMe' ? colors.WHITE : 'transparent';
             return (
-              <TouchableOpacity
-                onPress={onPress}
-                style={[styles.touchBack, { backgroundColor }]}
-              >
+              <TouchableOpacity onPress={onPress} style={styles.touchBack}>
                 <SvgComponent
                   name="Back"
-                  {...genSVGProps(24, 24, colors.DARK)}
+                  {...genSVGProps(28, 28, colors.DARK)}
                 />
               </TouchableOpacity>
             );
@@ -56,11 +51,12 @@ const styles = StyleSheet.create({
     elevation: 0,
   },
   touchBack: {
-    width: responsive(32),
-    height: responsive(32),
+    width: responsive(42),
+    height: responsive(42),
     borderRadius: responsive(12),
     alignItems: 'center',
     justifyContent: 'center',
     marginLeft: responsive(20),
+    backgroundColor: colors.WHITE,
   },
 });
