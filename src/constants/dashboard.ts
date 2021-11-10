@@ -12,11 +12,11 @@ export const arrCategoryDashboard: ICategory[] = [
     screen: 'MyProject',
   },
   {
-    nameIcon: 'Demo',
-    title: 'Thử nghiệm',
+    nameIcon: 'Skill',
+    title: 'Kỹ năng',
   },
   {
-    nameIcon: 'Blog',
-    title: 'Blog',
+    nameIcon: 'Demo',
+    title: 'Thử nghiệm',
   },
 ];

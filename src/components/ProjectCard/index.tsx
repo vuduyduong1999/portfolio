@@ -31,6 +31,7 @@ export const ProjectCard = ({ project }: Props) => {
       </LinearGradient>
       <Text style={styles.txtName}>{name}</Text>
       <Text style={styles.txtCompany}>{company}</Text>
+      <View style={styles.separator} />
       <Text style={styles.txtDescription}>{description}</Text>
     </LinearGradient>
   );
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
     width: responsive(345),
     height: responsive(550),
     alignItems: 'center',
-    paddingTop: '20%',
+    paddingTop: '18%',
     borderRadius: responsive(20),
   },
   wrapperAvatar: {
@@ -63,7 +64,6 @@ const styles = StyleSheet.create({
   txtName: {
     ...typos.xl3.bold,
     textAlign: 'center',
-    marginBottom: responsive(5),
   },
   txtCompany: {
     ...typos.md.semiBold,
@@ -74,5 +74,11 @@ const styles = StyleSheet.create({
     ...typos.xs.regular,
     width: responsive(275),
     textAlign: 'center',
+  },
+  separator: {
+    height: StyleSheet.hairlineWidth * 2,
+    backgroundColor: colors.DARK,
+    width: '40%',
+    marginVertical: responsive(8),
   },
 });

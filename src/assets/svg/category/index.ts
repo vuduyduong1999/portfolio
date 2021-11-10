@@ -6,5 +6,6 @@ import Demo from './Demo_svg.svg';
 import List from './List_svg.svg';
 import Picture from './Picture_svg.svg';
 import Project from './Project_svg.svg';
+import Skill from './Skill.svg';
 
-export { AboutMe, Blog, Cart, Chart, Demo, List, Picture, Project };
+export { AboutMe, Blog, Cart, Chart, Demo, List, Picture, Project, Skill };
