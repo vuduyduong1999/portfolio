@@ -6,16 +6,16 @@ import { responsive } from './responsive';
 const bold: TextStyle = {
   fontWeight: Platform.OS === 'ios' ? '700' : undefined,
   fontFamily: 'SVN-GilroyBold',
-  color: colors.BLACK,
+  color: colors.DARK,
 };
 const semiBold: TextStyle = {
   fontFamily: 'SVN-GilroySemiBold',
-  color: colors.BLACK,
+  color: colors.DARK,
   fontWeight: Platform.OS === 'ios' ? '600' : undefined,
 };
 const regular: TextStyle = {
   fontFamily: 'SVN-Gilroy',
-  color: colors.BLACK,
+  color: colors.DARK,
   fontWeight: Platform.OS === 'ios' ? '400' : undefined,
 };
 

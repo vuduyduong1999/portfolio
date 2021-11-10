@@ -12,9 +12,9 @@ import Svg, { Path, PathProps } from 'react-native-svg';
 
 import { HEIGHT } from '@styles';
 import { ESide } from '@types';
-import { curve } from '@utils';
 
 import { C, MIN_LEDGE } from './constant';
+import { curve } from './utils';
 
 interface Props {
   side: ESide;

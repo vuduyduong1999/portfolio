@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-import { NameSVG, SvgComponent } from '@common';
+import { SvgComponent } from '@common';
 
 import { colors, responsive, typos } from '@styles';
 import { ICategory } from '@types';

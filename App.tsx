@@ -4,8 +4,6 @@ import { StatusBar, View } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 
-import { LiquidSlider } from '@components';
-
 import { RootApp } from '@navigation';
 
 const App = () => {
@@ -13,6 +11,7 @@ const App = () => {
     <NavigationContainer>
       <StatusBar translucent backgroundColor={'transparent'} />
       <RootApp />
+      {/* <View style={{ flex: 1, backgroundColor: 'white' }} /> */}
     </NavigationContainer>
   );
 };

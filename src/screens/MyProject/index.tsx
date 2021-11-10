@@ -2,11 +2,13 @@ import React from 'react';
 
 import { View, Text, StyleSheet } from 'react-native';
 
-import { LiquidSlider } from '@components';
-
 interface Props {}
-export const IntroduceIOSScreen = ({}: Props) => {
-  return <LiquidSlider />;
+export const MyProjectScreen = ({}: Props) => {
+  return (
+    <View style={styles.container}>
+      <Text>MyProjectScreen</Text>
+    </View>
+  );
 };
 const styles = StyleSheet.create({
   container: { flex: 1 },
