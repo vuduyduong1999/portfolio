@@ -35,9 +35,7 @@ export const Button = ({ show }: Props) => {
       style={styles.container}
     >
       <Animated.View style={[styles.view, aniStyle]}>
-        <Text style={{ ...typos.sm.bold, color: colors.WHITE }}>
-          Khám phá thêm
-        </Text>
+        <Text style={styles.txt}>Khám phá thêm</Text>
       </Animated.View>
     </TouchableOpacity>
   );
@@ -57,4 +55,5 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: colors.WHITE,
   },
+  txt: { ...typos.sm.bold, color: colors.WHITE },
 });

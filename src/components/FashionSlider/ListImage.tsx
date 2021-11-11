@@ -1,16 +1,8 @@
 import React from 'react';
 
-import {
-  View,
-  Text,
-  StyleSheet,
-  FlatList,
-  FlatListProps,
-  Image,
-} from 'react-native';
+import { FlatList } from 'react-native';
 
 import Animated, {
-  useAnimatedProps,
   useAnimatedScrollHandler,
   useAnimatedStyle,
 } from 'react-native-reanimated';
@@ -18,7 +10,7 @@ import Animated, {
 import { FocusAwareStatusBar } from '@common';
 
 import { slides } from '@constants';
-import { colors, responsive, typos, WIDTH } from '@styles';
+import { responsive } from '@styles';
 import { ISlide } from '@types';
 
 import { SlideImage } from './SlideImage';

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Platform, StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import SplashScreen from 'react-native-splash-screen';
 

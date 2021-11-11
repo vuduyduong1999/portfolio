@@ -1,18 +1,14 @@
 import React from 'react';
 
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { ScrollView } from 'react-native-gesture-handler';
-import Animated, {
-  useAnimatedReaction,
-  useAnimatedRef,
-  useAnimatedStyle,
-} from 'react-native-reanimated';
+import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 
 import { slides } from '@constants';
 import { colors, responsive } from '@styles';
 import { ISlide } from '@types';
 
+import { Indicator } from './Indicator';
 import { SlideContent } from './SlideContent';
 
 interface Props {
@@ -37,18 +33,19 @@ export const ListContent = ({ color, scrollX }: Props) => {
   return (
     <View style={styles.container}>
       <Animated.View style={backgroundStyle} />
-      <View style={styles.content}>
-        <View style={{ height: responsive(70) }} />
-        <View style={{ flex: 1 }}>{slides.map(renderItem)}</View>
+      <View style={styles.wrapperContent}>
+        <Indicator scrollX={scrollX} />
+        <View style={styles.content}>{slides.map(renderItem)}</View>
       </View>
     </View>
   );
 };
 const styles = StyleSheet.create({
   container: { flex: 0.4 },
-  content: {
+  wrapperContent: {
     flex: 1,
     backgroundColor: colors.WHITE,
     borderTopLeftRadius,
   },
+  content: { flex: 1 },
 });

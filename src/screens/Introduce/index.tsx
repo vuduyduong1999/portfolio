@@ -6,10 +6,9 @@ import { FashionSlider, LiquidSlider } from '@components';
 
 interface Props {}
 export const IntroduceScreen = ({}: Props) => {
-  // if (Platform.OS === 'android') {
-  //   return null;
-  // }
+  if (Platform.OS === 'android') {
+    return <FashionSlider />;
+  }
 
-  return <FashionSlider />;
-  // return <LiquidSlider />;
+  return <LiquidSlider />;
 };

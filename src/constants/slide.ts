@@ -14,7 +14,7 @@ import {
 export const slides: ISlide[] = [
   {
     color: colors.DARK,
-    title: 'Duy Duong',
+    title: 'Duy Dương',
     description:
       '21 - 11 - 1999\n Liên hệ: duongvu0953@gmail.com\n 034 660 2086',
     picture: Avatar,

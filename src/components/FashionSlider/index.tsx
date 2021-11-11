@@ -4,7 +4,6 @@ import { StyleSheet, View } from 'react-native';
 
 import {
   interpolateColor,
-  interpolateColors,
   useDerivedValue,
   useSharedValue,
 } from 'react-native-reanimated';
