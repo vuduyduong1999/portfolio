@@ -22,7 +22,10 @@ const RootApp = () => {
     <RootStack.Navigator
       screenOptions={({ route }) => {
         return {
-          headerShown: route.name === 'AboutMe' || route.name === 'MyProject',
+          headerShown:
+            route.name === 'AboutMe' ||
+            route.name === 'MyProject' ||
+            route.name === 'MySkill',
           headerStyle: styles.headerStyle,
           headerTransparent: true,
           title: '',
@@ -38,7 +41,7 @@ const RootApp = () => {
           },
         };
       }}
-      initialRouteName={initialRouteName}
+      initialRouteName={'DashBoard'}
     >
       {renderRoot()}
     </RootStack.Navigator>

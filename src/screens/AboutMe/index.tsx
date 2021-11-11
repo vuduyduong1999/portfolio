@@ -16,5 +16,5 @@ export const AboutMeScreen = ({}: Props) => {
   );
 };
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.SECONDARY },
+  container: { flex: 1 },
 });

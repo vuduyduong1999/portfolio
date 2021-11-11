@@ -1,2 +1,3 @@
 export * from './common';
-export * from './logo';
+export * from './projectLogo';
+export * from './skillLogo';

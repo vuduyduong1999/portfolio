@@ -2,12 +2,14 @@ import React from 'react';
 
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
+import LinearGradient from 'react-native-linear-gradient';
+
 import { colors, responsive, typos } from '@styles';
 
 interface Props {}
 export const Content = ({}: Props) => {
   return (
-    <>
+    <LinearGradient colors={colors.LINEAR} style={{ flex: 1 }}>
       <View style={styles.dash} />
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -46,7 +48,7 @@ export const Content = ({}: Props) => {
           }
         </Text>
       </ScrollView>
-    </>
+    </LinearGradient>
   );
 };
 const styles = StyleSheet.create({

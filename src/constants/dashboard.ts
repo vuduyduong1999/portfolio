@@ -14,9 +14,10 @@ export const arrCategoryDashboard: ICategory[] = [
   {
     nameIcon: 'Skill',
     title: 'Kỹ năng',
+    screen: 'MySkill',
   },
-  {
-    nameIcon: 'Demo',
-    title: 'Thử nghiệm',
-  },
+  // {
+  //   nameIcon: 'Demo',
+  //   title: 'Thử nghiệm',
+  // },
 ];

@@ -6,6 +6,6 @@ export type RootStackParamList = {
   AboutMe: undefined;
   MyProject: undefined;
   MyDemo: undefined;
-  MyBlog: undefined;
+  MySkill: undefined;
 };
 export const RootStack = createStackNavigator<RootStackParamList>();

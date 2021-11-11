@@ -5,6 +5,7 @@ import {
   DashBoardScreen,
   IntroduceScreen,
   MyProjectScreen,
+  MySkillScreen,
 } from '@screens';
 
 import { RootStack } from './navigator';
@@ -16,6 +17,7 @@ export const renderRoot = () => {
       <RootStack.Screen name={'DashBoard'} component={DashBoardScreen} />
       <RootStack.Screen name={'AboutMe'} component={AboutMeScreen} />
       <RootStack.Screen name={'MyProject'} component={MyProjectScreen} />
+      <RootStack.Screen name={'MySkill'} component={MySkillScreen} />
     </>
   );
 };

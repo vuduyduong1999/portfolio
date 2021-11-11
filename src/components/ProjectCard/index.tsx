@@ -9,15 +9,23 @@ import { IProject } from '@types';
 
 interface Props {
   project: IProject;
+  style?: {
+    marginHorizontal?: number;
+    marginVertical?: number;
+    marginBottom?: number;
+    marginTop?: number;
+    marginLeft?: number;
+    marginRight?: number;
+  };
 }
-export const ProjectCard = ({ project }: Props) => {
+export const ProjectCard = ({ project, style }: Props) => {
   const { logo, company, description, name } = project;
   return (
     <LinearGradient
       colors={[colors.SECONDARY, colors.WHITE]}
       start={{ x: 0, y: 0 }}
       end={{ x: 0, y: 0.4 }}
-      style={styles.container}
+      style={[styles.container, style]}
     >
       <LinearGradient
         colors={colors.LINEAR}
