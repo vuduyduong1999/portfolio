@@ -4,6 +4,7 @@ import { ISlide } from '@types';
 import {
   Avatar,
   Experience,
+  Imic,
   Satavan,
   Study,
   University,
@@ -15,7 +16,7 @@ export const slides: ISlide[] = [
     color: colors.DARK,
     title: 'Duy Duong',
     description:
-      'Make by Duong vu\n Liên hệ: duongvu0953@gmail.com\n 21 - 11 - 1999',
+      '21 - 11 - 1999\n Liên hệ: duongvu0953@gmail.com\n 034 660 2086',
     picture: Avatar,
   },
   {
@@ -32,7 +33,12 @@ export const slides: ISlide[] = [
       'Tốt nghiệp chuyên ngành\n Công nghệ phần mềm\n Trường ĐH Công nghiệp Thực Phẩm TP.HCM',
     picture: University,
   },
-
+  {
+    color: colors.SECONDARY,
+    title: 'IMIC',
+    description: 'Hoàn thành khoá học React native tại trung tâm IMIC',
+    picture: Imic,
+  },
   {
     color: colors.GREY,
     title: 'Kinh nghiệm',
