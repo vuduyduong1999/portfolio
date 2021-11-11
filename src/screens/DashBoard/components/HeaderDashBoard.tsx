@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { SvgComponent } from '@common';
 
-import { colors, responsive, typos } from '@styles';
+import { colors, hitSlop, responsive, typos } from '@styles';
 import { callByPhone, genSVGProps } from '@utils';
 
 import { Avatar } from '@assets/images';
@@ -37,7 +37,11 @@ export const HeaderDashBoard = ({}: Props) => {
             <Text style={styles.txtPosition}>Mobile developer</Text>
           </View>
         </View>
-        <TouchableOpacity onPress={onCallPress} style={styles.touchCall}>
+        <TouchableOpacity
+          hitSlop={hitSlop}
+          onPress={onCallPress}
+          style={styles.touchCall}
+        >
           <SvgComponent name="Call" {...genSVGProps(16, 16, colors.WHITE)} />
           <Text style={styles.txtPhone}>034 660 2086</Text>
         </TouchableOpacity>

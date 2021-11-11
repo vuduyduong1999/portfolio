@@ -18,11 +18,13 @@ import { ISkill } from '@types';
 
 interface Props {}
 export const MySkillScreen = ({}: Props) => {
-  const scrollY = useSharedValue(0);
   const heightHeader = useHeaderHeight();
+  const scrollY = useSharedValue(0);
 
   const start = { x: 0, y: 0 };
   const end = { x: 0, y: 0.7 };
+  const startDecor = { x: 0, y: 0.9 };
+  const endDecor = { x: 0, y: 1 };
 
   const paddingTop = heightHeader + responsive(20);
 
@@ -52,6 +54,13 @@ export const MySkillScreen = ({}: Props) => {
         contentContainerStyle={styles.contentContainer}
       />
       <View pointerEvents="none">{mySkill.map(renderSkillCard)}</View>
+      <LinearGradient
+        colors={['rgba(0,42,61,0)', colors.DARK]}
+        start={startDecor}
+        end={endDecor}
+        pointerEvents="none"
+        style={StyleSheet.absoluteFillObject}
+      />
     </LinearGradient>
   );
 };

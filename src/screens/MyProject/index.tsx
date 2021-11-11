@@ -39,6 +39,7 @@ export const MyProjectScreen = ({}: Props) => {
         horizontal
         showsHorizontalScrollIndicator={false}
         pagingEnabled
+        scrollEventThrottle={16}
         onScroll={scrollHandler}
         renderItem={renderItem}
         keyExtractor={keyExtractor}

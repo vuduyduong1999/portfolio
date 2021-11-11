@@ -36,7 +36,6 @@ export const Slider = ({
   const hasPrev = !!prev;
   const hasNext = !!next;
   const zIndex = useSharedValue(0);
-  const isSlide = useSharedValue(false);
 
   const left = useVector();
   const right = useVector();
@@ -70,9 +69,8 @@ export const Slider = ({
       if (sideAnimated.value === ESide.LEFT) {
         if (x >= WIDTH / 3) {
           const dest = snapPoint(left.x.value, velocityX, points);
-          isSlide.value = dest === WIDTH;
           left.x.value = withSpring(dest, option, () => {
-            if (isSlide.value) {
+            if (dest === WIDTH) {
               runOnJS(setCurrentIndex)(currentIndex - 1);
             }
             sideAnimated.value = ESide.NONE;
@@ -84,10 +82,8 @@ export const Slider = ({
       } else if (sideAnimated.value === ESide.RIGHT) {
         if (x <= (WIDTH * 3) / 4) {
           const dest = snapPoint(right.x.value, velocityX, points);
-          isSlide.value = dest === WIDTH;
-
           right.x.value = withSpring(dest, option, () => {
-            if (isSlide.value) {
+            if (dest === WIDTH) {
               runOnJS(setCurrentIndex)(currentIndex + 1);
             }
             sideAnimated.value = ESide.NONE;
@@ -117,14 +113,14 @@ export const Slider = ({
         {children}
         {prev && (
           <Animated.View style={[StyleSheet.absoluteFill, leftIndexStyle]}>
-            <Wave isTransitioning={isSlide} position={left} side={ESide.LEFT}>
+            <Wave position={left} side={ESide.LEFT}>
               {prev}
             </Wave>
           </Animated.View>
         )}
         {next && (
           <Animated.View style={StyleSheet.absoluteFill}>
-            <Wave isTransitioning={isSlide} position={right} side={ESide.RIGHT}>
+            <Wave position={right} side={ESide.RIGHT}>
               {next}
             </Wave>
           </Animated.View>

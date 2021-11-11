@@ -20,7 +20,6 @@ interface Props {
   side: ESide;
   position: Vector<Animated.SharedValue<number>>;
   children: React.ReactNode;
-  isTransitioning: Animated.SharedValue<boolean>;
 }
 
 const APath = Animated.createAnimatedComponent(Path);
@@ -28,23 +27,25 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
   const R = useDerivedValue(() => {
     return x.value + MIN_LEDGE;
   });
+  const stepY = R;
+  const stepX = useDerivedValue(() => R.value / 2);
   const CurveCubize = useDerivedValue(() => R.value * C);
   const animatedProps = useAnimatedProps((): PathProps => {
     const p1: Vector = {
       x: x.value,
-      y: y.value - 2 * R.value,
+      y: y.value - 2 * stepY.value,
     };
     const c1: Vector = {
       x: p1.x,
       y: p1.y + CurveCubize.value,
     };
     const p2: Vector = {
-      x: x.value + R.value / 2,
-      y: y.value - R.value,
+      x: x.value + stepX.value,
+      y: y.value - stepY.value,
     };
 
     const p3: Vector = {
-      x: x.value + R.value,
+      x: x.value + 2 * stepX.value,
       y: y.value,
     };
     const c31: Vector = {
@@ -56,13 +57,13 @@ export const Wave = ({ children, side, position: { x, y } }: Props) => {
       y: p3.y + CurveCubize.value,
     };
     const p4: Vector = {
-      x: x.value + R.value / 2,
-      y: y.value + R.value,
+      x: x.value + stepX.value,
+      y: y.value + stepY.value,
     };
 
     const p5: Vector = {
       x: x.value,
-      y: y.value + 2 * R.value,
+      y: y.value + 2 * stepY.value,
     };
     const c5: Vector = {
       x: p5.x,

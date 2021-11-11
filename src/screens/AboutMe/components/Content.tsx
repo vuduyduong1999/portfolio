@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     paddingTop: responsive(10),
   },
   dash: {
-    width: '60%',
+    width: responsive(335),
     height: StyleSheet.hairlineWidth,
     marginLeft: responsive(20),
     backgroundColor: colors.WHITE,

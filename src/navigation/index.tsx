@@ -13,8 +13,6 @@ import { RootStack, RootStackParamList } from './navigator';
 import { renderRoot } from './renderRoot';
 
 const RootApp = () => {
-  const initialRouteName: keyof RootStackParamList =
-    Platform.OS === 'ios' ? 'Introduce' : 'DashBoard';
   useEffect(() => {
     SplashScreen.hide();
   }, []);
@@ -41,7 +39,7 @@ const RootApp = () => {
           },
         };
       }}
-      initialRouteName={'DashBoard'}
+      initialRouteName={'Introduce'}
     >
       {renderRoot()}
     </RootStack.Navigator>

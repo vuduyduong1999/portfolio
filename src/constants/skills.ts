@@ -45,7 +45,7 @@ export const mySkill: ISkill[] = [
     logo: RestAPI_logo,
     name: 'Rest API',
     description:
-      'Rest API là tiêu chuẩn thiết kế API khá phổ biến hiện nay. Nhưng về cách thức sử dụng với front-end developer khó kiểm soát được các trường dữ liệu khi sử dụng. Cũng như khi sử dụng chuẩn này thì front-end và back-end mất nhiều thời gian để giao tiếp với nhau, hay phối hợp với nhau để hoàn thành task. ',
+      'Rest API là tiêu chuẩn thiết kế API khá phổ biến hiện nay. Nhưng về cách thức sử dụng với front-end developer khó kiểm soát được các trường dữ liệu khi sử dụng. Cũng như khi sử dụng chuẩn này thì front-end và back-end mất nhiều thời gian để giao tiếp với nhau, hay phối hợp với nhau để hoàn thành nhiệm vụ. ',
   },
   {
     logo: NodeJS_logo,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import LottieView from 'lottie-react-native';
 import LinearGradient from 'react-native-linear-gradient';
