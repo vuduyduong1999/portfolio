@@ -1,10 +1,10 @@
 import { NameSVG } from '@common';
 
-import { RootStackParamList } from '@navigation';
+import { DemoStackParamList, RootStackParamList } from '@navigation';
 
 export interface ICategory {
   nameIcon: NameSVG;
   title: string;
-  screen?: keyof RootStackParamList;
+  screen?: keyof RootStackParamList | keyof DemoStackParamList;
   backgroundColor?: string;
 }

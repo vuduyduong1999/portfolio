@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/core';
 
 import { CategoryCard } from '@components';
 
-import { arrCategoryDashboardHome } from '@constants';
+import { arrCategoryDashboardDemo } from '@constants';
 import { responsive } from '@styles';
 import { ICategory, RootNavigationProp } from '@types';
 
@@ -26,7 +26,7 @@ export const Categories = ({}: Props) => {
   };
   return (
     <View style={styles.container}>
-      {arrCategoryDashboardHome.map(renderItem)}
+      {arrCategoryDashboardDemo.map(renderItem)}
     </View>
   );
 };

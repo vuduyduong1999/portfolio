@@ -1,29 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
-import SplashScreen from 'react-native-splash-screen';
+import { ChartScreen, DemoDashboardScreen } from '@screens';
 
 import { SvgComponent } from '@common';
 
 import { colors, responsive } from '@styles';
 import { genSVGProps } from '@utils';
 
-import { RootStack, RootStackParamList, DemoStackParamList } from './navigator';
-import { renderRoot } from './renderRoot';
+import { DemoStackNavigator } from './navigator';
 
-const RootApp = () => {
-  useEffect(() => {
-    SplashScreen.hide();
-  }, []);
+export const DemoStack = () => {
   return (
-    <RootStack.Navigator
+    <DemoStackNavigator.Navigator
       screenOptions={({ route }) => {
         return {
-          headerShown:
-            route.name === 'AboutMe' ||
-            route.name === 'MyProject' ||
-            route.name === 'MySkill',
+          headerShown: true,
           headerStyle: styles.headerStyle,
           headerTransparent: true,
           title: '',
@@ -39,13 +32,16 @@ const RootApp = () => {
           },
         };
       }}
-      initialRouteName={'Introduce'}
     >
-      {renderRoot()}
-    </RootStack.Navigator>
+      <DemoStackNavigator.Screen
+        name={'DemoDashboard'}
+        component={DemoDashboardScreen}
+      />
+      <DemoStackNavigator.Screen name={'Chart'} component={ChartScreen} />
+    </DemoStackNavigator.Navigator>
   );
 };
-export { RootApp, RootStackParamList, DemoStackParamList };
+
 const styles = StyleSheet.create({
   headerStyle: {
     shadowOpacity: 0,

@@ -8,4 +8,12 @@ export type RootStackParamList = {
   MyDemo: undefined;
   MySkill: undefined;
 };
+
 export const RootStack = createStackNavigator<RootStackParamList>();
+
+export type DemoStackParamList = {
+  DemoDashboard: undefined;
+  Chart: undefined;
+};
+
+export const DemoStackNavigator = createStackNavigator<DemoStackParamList>();

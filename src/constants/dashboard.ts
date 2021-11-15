@@ -1,6 +1,6 @@
 import { ICategory } from '@types';
 
-export const arrCategoryDashboard: ICategory[] = [
+export const arrCategoryDashboardHome: ICategory[] = [
   {
     nameIcon: 'AboutMe',
     title: 'Thông tin về tôi',
@@ -16,8 +16,15 @@ export const arrCategoryDashboard: ICategory[] = [
     title: 'Kỹ năng',
     screen: 'MySkill',
   },
-  // {
-  //   nameIcon: 'Demo',
-  //   title: 'Thử nghiệm',
-  // },
+  {
+    nameIcon: 'Demo',
+    title: 'Thử nghiệm',
+    screen: 'MyDemo',
+  },
+];
+export const arrCategoryDashboardDemo: ICategory[] = [
+  {
+    nameIcon: 'Chart',
+    title: 'Biểu đồ',
+  },
 ];

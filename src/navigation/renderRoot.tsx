@@ -8,6 +8,7 @@ import {
   MySkillScreen,
 } from '@screens';
 
+import { DemoStack } from './DemoStack';
 import { RootStack } from './navigator';
 
 export const renderRoot = () => {
@@ -18,6 +19,7 @@ export const renderRoot = () => {
       <RootStack.Screen name={'AboutMe'} component={AboutMeScreen} />
       <RootStack.Screen name={'MyProject'} component={MyProjectScreen} />
       <RootStack.Screen name={'MySkill'} component={MySkillScreen} />
+      <RootStack.Screen name={'MyDemo'} component={DemoStack} />
     </>
   );
 };
