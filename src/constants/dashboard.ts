@@ -26,5 +26,6 @@ export const arrCategoryDashboardDemo: ICategory[] = [
   {
     nameIcon: 'Chart',
     title: 'Biểu đồ',
+    screen: 'Chart',
   },
 ];

@@ -6,6 +6,7 @@ import { useHeaderHeight } from '@react-navigation/elements';
 import LinearGradient from 'react-native-linear-gradient';
 
 import { Categories, Decor } from './components';
+import { FocusAwareStatusBar } from '@common';
 
 import { colors, responsive } from '@styles';
 
@@ -19,6 +20,7 @@ export const DemoDashboardScreen = ({}: Props) => {
       colors={[colors.SECONDARY, colors.WHITE]}
       style={[styles.container, { paddingTop }]}
     >
+      <FocusAwareStatusBar barStyle="light-content" />
       <Categories />
       <Decor />
     </LinearGradient>

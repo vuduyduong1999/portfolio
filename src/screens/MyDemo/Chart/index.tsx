@@ -1,13 +1,23 @@
 import React from 'react';
 
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+
+import LinearGradient from 'react-native-linear-gradient';
+
+import { FocusAwareStatusBar } from '@common';
+
+import { colors } from '@styles';
 
 interface Props {}
 export const ChartScreen = ({}: Props) => {
   return (
-    <View style={styles.container}>
+    <LinearGradient
+      colors={[colors.SECONDARY, colors.WHITE]}
+      style={styles.container}
+    >
+      <FocusAwareStatusBar barStyle="light-content" />
       <Text>ChartScreen</Text>
-    </View>
+    </LinearGradient>
   );
 };
 const styles = StyleSheet.create({
