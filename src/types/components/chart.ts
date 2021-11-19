@@ -1,10 +1,10 @@
-export interface Amount_Chart {
+export interface IAmount_Chart {
   amount: string;
   currency: string;
   scale: string;
 }
 
-export interface PercentChange_Chart {
+export interface IPercentChange_Chart {
   hour: number;
   day: number;
   week: number;
@@ -12,26 +12,40 @@ export interface PercentChange_Chart {
   year: number;
 }
 
-export interface LatestPrice_Chart {
-  amount: Amount_Chart;
+export interface ILatestPrice_Chart {
+  amount: IAmount_Chart;
   timestamp: string;
-  percent_change: PercentChange_Chart;
+  percent_change: IPercentChange_Chart;
 }
 
-export type PriceList = [string, number][];
+export type IPriceList = [string, number][];
 
-export interface DataPoints_Chart {
+export interface IDataPoints_Chart {
   percent_change: number;
-  prices: PriceList;
+  prices: IPriceList;
+  candles: ICandleChart[];
 }
 
-export interface Prices_Chart {
-  latest: string;
-  latest_price: LatestPrice_Chart;
-  hour: DataPoints_Chart;
-  day: DataPoints_Chart;
-  week: DataPoints_Chart;
-  month: DataPoints_Chart;
-  year: DataPoints_Chart;
-  all: DataPoints_Chart;
+export interface ICandleChart {
+  timestamp: number;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+}
+export interface IDataChart {
+  label: string;
+  maxPrice: number;
+  minPrice: number;
+  percent_change: number;
+  line: {
+    timestamp: number;
+    value: number;
+  }[];
+  candles: ICandleChart[];
+}
+
+export interface IChart {
+  shortName: string;
+  data: IDataChart;
 }

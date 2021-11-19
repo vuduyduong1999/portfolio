@@ -1,4 +1,4 @@
-package com.portfolio;
+package com.duongvu.portfolio;
 
 
 import org.devio.rn.splashscreen.SplashScreen;
