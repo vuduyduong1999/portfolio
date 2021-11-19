@@ -24,6 +24,7 @@ export const Chart = ({}: Props) => {
     <FlatList
       ref={refFlatList}
       horizontal
+      showsHorizontalScrollIndicator={false}
       scrollEnabled={false}
       pagingEnabled
       data={arrComponents}
