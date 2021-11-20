@@ -13,14 +13,21 @@ export const Switch = ({}: Props) => {
   const text = isCandleChart
     ? 'Switch to Line Chart'
     : 'Switch to Candle Chart';
+
   const onPress = () => setIsCandleChart(!isCandleChart);
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.container}>
-      <Text style={{ ...typos.md.bold, color: colors.WHITE }}>{text}</Text>
+      <Text style={typos.md.bold}>{text}</Text>
     </TouchableOpacity>
   );
 };
 const styles = StyleSheet.create({
-  container: { alignSelf: 'center', marginVertical: responsive(15) },
+  container: {
+    alignSelf: 'center',
+    backgroundColor: colors.WHITE,
+    marginVertical: responsive(15),
+    padding: responsive(10),
+    borderRadius: responsive(4),
+  },
 });
