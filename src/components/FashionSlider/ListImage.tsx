@@ -44,7 +44,7 @@ export const ListImage = ({ scrollX, color }: Props) => {
       <FocusAwareStatusBar barStyle="light-content" />
       <AFlatList
         pagingEnabled
-        scrollEventThrottle={16}
+        scrollEventThrottle={1}
         horizontal
         onScroll={scrollHandler}
         showsHorizontalScrollIndicator={false}
